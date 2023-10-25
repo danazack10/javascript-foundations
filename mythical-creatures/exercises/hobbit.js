@@ -37,12 +37,12 @@ function meetPeople(hobbit, people) {
 
 function findFriends(hobbit) {
   var friends = [];
-  for (var i = 0; i < hobbit.acquaintances; i++) {
+  for (var i = 0; i < hobbit.acquaintances.length; i++) {
     if (hobbit.acquaintances[i].relationship === "friend"){
-    friends.push(hobbit.acquaintances[i].name)
+    friends.push(hobbit.acquaintances[i].name);
     }
   }
-  return friends
+  return friends;
 }
 
 module.exports = {
